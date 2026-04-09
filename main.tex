@@ -1,170 +1,99 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
-\usepackage{graphicx}
+\usepackage{graphicx} % Required for inserting images
 
-\title{TALLER DE OPTIMIZACIÓN}
-\author{Rafael Gallardo Blanco \\ XXXXX \\ XXXX}
-\date{Marzo 2026}
+\title{EJERCICIO}
+\author{Rafael Josue Gallardo Blanco}
+\date{March 2026}
 
 \begin{document}
 
 \maketitle
-\vspace{12cm}
-\section*{PARTE A (problema 1, 2 y 3)}
 
-\subsection*{problema 1}
-\subsection*{Variables del problema}
+\section{PROBLEM INDUSTRIAL}
+\large
+Una panaderia produce Panes y Tortas cada uno con el siguiente margen de ganancia:
+
 \begin{itemize}
-    \item \textbf{Variable $X_E$:} Cantidad de sillas producidos por semana.
-    \item \textbf{Variable $X_R$:} Cantidad de mesas producida por semana.
+    \item Pan : \$2 
+    \item Torta : \$6
 \end{itemize}
 
-\subsection*{Función Objetivo}
+\large El horno tiene una disponibilidad de 18 horas y los tiempos de cada uno son:
+
 \begin{itemize}
-    \item MAXIMIZAR Z = \$12000XE + \$20000XR
+    \item Pan : 1 Hora 
+    \item Torta : 3 Horas
 \end{itemize}
 
-\subsection*{Restricciones}
+\large la demanda minima de la panaderia es de 2 tortas al dia, ¿cuanto produce para maximizar la ganancia?
+
+\begin{center}
+    \item \textbf{Variable XA:} Cantidad de produccion de panes 
+    \item \textbf{Variable XB:} Cantidad de produccion de tortas
+    \item \textbf{Funcion objetivo:} Maximizar Z: 2XA + 6XB
+    \item \large \textbf{Restricciones:} \item 1XA + 3XB = 18 y XB $ \geq 2$, XA$ \geq 0$
+    
+\end{center}
+\vspace{1cm}
+\section{PROBLEM SISTEMAS}
+\large
+ Un balanceador distribuye entre 3 microservicios: \textbf{M1}, \textbf{M2} Y \textbf{M3}
+\ cada uno de los microservicios tiene el siguiente costo
+
 \begin{itemize}
-    \item $2X_E + 5X_R \leq 50$ 
-    \item $X_E \leq 10$ 
-    \item $X_E \geq 0$ y $X_R \geq 0$ 
+    \item M1 : \$0.02
+    \item M2 : \$0.015
+    \item M3 : \$0.03
 \end{itemize}
 
-\subsection*{problema 2}
-\subsection*{Variables del problema}
+\large acompañado de las siguientes capacidades maximas:
+
 \begin{itemize}
-    \item \textbf{Variable $X_E$:} Cantidad de procesos en el nucleo A
-    \item \textbf{Variable $X_R$:} Cantidad de procesos en el nucleo B.
+    \item M1  $ \leq 200$
+    \item M2  $ \leq 250$
+    \item M3  $ \leq 150$
 \end{itemize}
 
-\subsection*{Función Objetivo}
+\large El total requerido es de 500 repeticiones por minuto ¿como minimizar el costo total?
+
+\begin{center}
+    \item \textbf{Variable XA:} Cantidad de repeticiones en el microservidor M1
+    \item \textbf{Variable XB:} Cantidad de repeticiones en el microservidor M2
+    \item \textbf{Variable XC:} Cantidad de repeticiones en el microservidor M3
+    \item \textbf{Funcion objetivo:} Minimizar Z: 0.02XA + 0.015XB + 0.03XC
+    \item \large \textbf{Restricciones:} 200XA + 250XB + 150XC = 500 y XA  $ \geq 0$, XB  $ \geq 0$, XC  $ \geq 0$
+\end{center}
+
+
+\vspace{5cm}
+\section{PROBLEMA IDEAL}
+\large
+ una empresa de lacteos tiene 3 productos \textbf{yogurt}, \textbf{queso} Y \textbf{Leche}
+\ cada uno de los productos tienen los siguientes margenes de ganancia
+
 \begin{itemize}
-    \item MINIMIZAR Z = \$2XE + \$6XR
+    \item yogurt : \$2000
+    \item queso : \$1800
+    \item leche : \$2100
 \end{itemize}
 
-\subsection*{Restricciones}
+\large cada producto ocupa las siguientes unidades de espacio por caja: 
+
 \begin{itemize}
-    \item $X_E + X_R = 200$ 
-    \item $X_E \leq 150$ 
-    \item $X_E \geq 0$ y $X_R \geq 0$ 
+    \item yogurt : 2.2
+    \item queso : 1.3
+    \item leche : 2.5
 \end{itemize}
 
-\vspace{6cm}
-\subsection*{problema 3}
-\subsection*{Variables del problema}
-\begin{itemize}
-    \item \textbf{Variable $X_E$:} Cantidad de caballitos de manera producidos por semana
-    \item \textbf{Variable $X_R$:} Cantidad de carritos de madera producido por semana
-\end{itemize}
+\large la capacidad maximas de las cajas son de 30 unidades ¿como debe ser la distribucuin en la caja para maximizar la ganancia?
 
-\subsection*{Función Objetivo}
-\begin{itemize}
-    \item MINIMIZAR Z = \$1000XE + \$1500XR (ganancia por producto)
-\end{itemize}
-
-\subsection*{Restricciones}
-\begin{itemize}
-    \item $0.5X_E + 0.5X_R = 80$ (tablones de madera para producir los juguetes) 
-    \item $X_E \leq 50$ 
-    \item $X_E \geq 0$ y $X_R \geq 0$ 
-\end{itemize}
-
-
-
-
-\section*{PARTE B (problema 4 y 5)}
-
-\subsection*{problema 4}
-\subsection*{Variables del problema}
-\begin{itemize}
-    \item \textbf{Variable $X_E$:} Cantidad de kilos de granola producidos por semana.
-    \item \textbf{Variable $X_R$:} Cantidad de kilos de cereal producida por semana.
-    \item \textbf{Variable $X_T$:} Cantidad de kilos de avena producida por semana.
-\end{itemize}
-
-\subsection*{Función Objetivo}
-\begin{itemize}
-    \item MAXIMIZAR Z = \$8000XE + \$5000XR + \$6000XT
-\end{itemize}
-
-\subsection*{Restricciones}
-\begin{itemize}
-    \item $X_E + 0.5X_R + 0.8X_T \leq 80$ 
-    \item $2X_E + X_R + 1.5X_T \leq 120$ 
-    \item $X_T \geq 10$ 
-    item $X_R \geq X_E$ 
-    \item $X_E \geq 0$ y $X_R \geq 0$ 
-\end{itemize}
-
-
-\subsection*{problema 5}
-\subsection*{Variables del problema}
-\begin{itemize}
-    \item \textbf{Variable $X_E$:} Cantidad de mensajes enviados por push
-    \item \textbf{Variable $X_R$:} Cantidad de mensajes enviados por email
-    \item \textbf{Variable $X_T$:} Cantidad de mensajes enviados por sms
-\end{itemize}
-
-\subsection*{Función Objetivo}
-\begin{itemize}
-    \item MAXIMIZAR Z = \$0.01XE + \$0.005XR + \$0.09XT
-\end{itemize}
-
-\subsection*{Restricciones}
-\begin{itemize}
-    \item $2X_E + X_R + 1.5X_T \leq 120$ 
-    \item $X_T \leq 500$ 
-    item $X_R \geq 2X_T$ 
-    \item $X_E \geq 0$ y $X_R \geq 0$ 
-\end{itemize}
-
-
-
-
-
-
-
-\vspace{12cm}
-\section*{PARTE C (problema 6)}
-
-
-\subsection*{Variables del problema}
-\begin{itemize}
-    \item \textbf{Variable $X_E$:} Cantidad de electrónicos producidos por semana.
-    \item \textbf{Variable $X_R$:} Cantidad de ropa producida por semana.
-\end{itemize}
-
-\subsection*{Función Objetivo}
-\begin{itemize}
-    \item MAXIMIZAR Z = \$45000XE + \$18000XR
-\end{itemize}
-
-\subsection*{Restricciones de tipo Industrial}
-\begin{itemize}
-    \item $30X_E + 10X_R \leq 5.400$ (Capacidad de bodega)
-    \item $X_E \leq 300$ (Espacio de almacenamiento)
-    \item $X_E \geq 0$ y $X_R \geq 0$ 
-\end{itemize}
-
-\subsection*{Restricciones de tipo Sistemas}
-\begin{itemize}
-    \item $X_E + X_R \leq 680$ (Capacidad de transacciones)
-    \item $X_R \leq 3X_E$ (Estabilidad del sistema)
-    \item $X_E \geq 0$ y $X_R \geq 0$ 
-\end{itemize}
-
-\subsection*{Clasificación del problema}
-\begin{itemize}
-    \item \textbf{Lineal:} Todas las variables tienen potencia 1 y solo se aplican operaciones de suma; no existen productos entre variables, por lo que su representación gráfica es lineal.
-    \item \textbf{Entero:} Las variables representan unidades físicas (pedidos), las cuales no pueden ser fraccionarias (no existen medios o cuartos de pedidos), por lo que el dominio es discreto.
-\end{itemize}
-\subsection*{Preguntas}
-ya fueron resultas a lo largo de la solucion del punto 
+\begin{center}
+    \item \textbf{Variable XA:} cantidad de yogurt en una caja
+    \item \textbf{Variable XB:} cantidad de queso en una caja
+    \item \textbf{Variable XC:} cantidad de leche en una caja
+    \item \textbf{Funcion objetivo:} Miximizar Z: 2000XA + 1800XB + 2100XC
+    \item \large \textbf{Restricciones:} 2.2AX + 1.3XB + 2.5 XC $ \leq 30$ y XA  $ \geq 0$, XB  $ \geq 0$, XC  $ \geq 0$
+\end{center}
 
 \end{document}
-
-
-
 
