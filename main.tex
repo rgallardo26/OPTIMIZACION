@@ -1,0 +1,170 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+
+\title{TALLER DE OPTIMIZACIÓN}
+\author{Rafael Gallardo Blanco \\ XXXXX \\ XXXX}
+\date{Marzo 2026}
+
+\begin{document}
+
+\maketitle
+\vspace{12cm}
+\section*{PARTE A (problema 1, 2 y 3)}
+
+\subsection*{problema 1}
+\subsection*{Variables del problema}
+\begin{itemize}
+    \item \textbf{Variable $X_E$:} Cantidad de sillas producidos por semana.
+    \item \textbf{Variable $X_R$:} Cantidad de mesas producida por semana.
+\end{itemize}
+
+\subsection*{Función Objetivo}
+\begin{itemize}
+    \item MAXIMIZAR Z = \$12000XE + \$20000XR
+\end{itemize}
+
+\subsection*{Restricciones}
+\begin{itemize}
+    \item $2X_E + 5X_R \leq 50$ 
+    \item $X_E \leq 10$ 
+    \item $X_E \geq 0$ y $X_R \geq 0$ 
+\end{itemize}
+
+\subsection*{problema 2}
+\subsection*{Variables del problema}
+\begin{itemize}
+    \item \textbf{Variable $X_E$:} Cantidad de procesos en el nucleo A
+    \item \textbf{Variable $X_R$:} Cantidad de procesos en el nucleo B.
+\end{itemize}
+
+\subsection*{Función Objetivo}
+\begin{itemize}
+    \item MINIMIZAR Z = \$2XE + \$6XR
+\end{itemize}
+
+\subsection*{Restricciones}
+\begin{itemize}
+    \item $X_E + X_R = 200$ 
+    \item $X_E \leq 150$ 
+    \item $X_E \geq 0$ y $X_R \geq 0$ 
+\end{itemize}
+
+\vspace{6cm}
+\subsection*{problema 3}
+\subsection*{Variables del problema}
+\begin{itemize}
+    \item \textbf{Variable $X_E$:} Cantidad de caballitos de manera producidos por semana
+    \item \textbf{Variable $X_R$:} Cantidad de carritos de madera producido por semana
+\end{itemize}
+
+\subsection*{Función Objetivo}
+\begin{itemize}
+    \item MINIMIZAR Z = \$1000XE + \$1500XR (ganancia por producto)
+\end{itemize}
+
+\subsection*{Restricciones}
+\begin{itemize}
+    \item $0.5X_E + 0.5X_R = 80$ (tablones de madera para producir los juguetes) 
+    \item $X_E \leq 50$ 
+    \item $X_E \geq 0$ y $X_R \geq 0$ 
+\end{itemize}
+
+
+
+
+\section*{PARTE B (problema 4 y 5)}
+
+\subsection*{problema 4}
+\subsection*{Variables del problema}
+\begin{itemize}
+    \item \textbf{Variable $X_E$:} Cantidad de kilos de granola producidos por semana.
+    \item \textbf{Variable $X_R$:} Cantidad de kilos de cereal producida por semana.
+    \item \textbf{Variable $X_T$:} Cantidad de kilos de avena producida por semana.
+\end{itemize}
+
+\subsection*{Función Objetivo}
+\begin{itemize}
+    \item MAXIMIZAR Z = \$8000XE + \$5000XR + \$6000XT
+\end{itemize}
+
+\subsection*{Restricciones}
+\begin{itemize}
+    \item $X_E + 0.5X_R + 0.8X_T \leq 80$ 
+    \item $2X_E + X_R + 1.5X_T \leq 120$ 
+    \item $X_T \geq 10$ 
+    item $X_R \geq X_E$ 
+    \item $X_E \geq 0$ y $X_R \geq 0$ 
+\end{itemize}
+
+
+\subsection*{problema 5}
+\subsection*{Variables del problema}
+\begin{itemize}
+    \item \textbf{Variable $X_E$:} Cantidad de mensajes enviados por push
+    \item \textbf{Variable $X_R$:} Cantidad de mensajes enviados por email
+    \item \textbf{Variable $X_T$:} Cantidad de mensajes enviados por sms
+\end{itemize}
+
+\subsection*{Función Objetivo}
+\begin{itemize}
+    \item MAXIMIZAR Z = \$0.01XE + \$0.005XR + \$0.09XT
+\end{itemize}
+
+\subsection*{Restricciones}
+\begin{itemize}
+    \item $2X_E + X_R + 1.5X_T \leq 120$ 
+    \item $X_T \leq 500$ 
+    item $X_R \geq 2X_T$ 
+    \item $X_E \geq 0$ y $X_R \geq 0$ 
+\end{itemize}
+
+
+
+
+
+
+
+\vspace{12cm}
+\section*{PARTE C (problema 6)}
+
+
+\subsection*{Variables del problema}
+\begin{itemize}
+    \item \textbf{Variable $X_E$:} Cantidad de electrónicos producidos por semana.
+    \item \textbf{Variable $X_R$:} Cantidad de ropa producida por semana.
+\end{itemize}
+
+\subsection*{Función Objetivo}
+\begin{itemize}
+    \item MAXIMIZAR Z = \$45000XE + \$18000XR
+\end{itemize}
+
+\subsection*{Restricciones de tipo Industrial}
+\begin{itemize}
+    \item $30X_E + 10X_R \leq 5.400$ (Capacidad de bodega)
+    \item $X_E \leq 300$ (Espacio de almacenamiento)
+    \item $X_E \geq 0$ y $X_R \geq 0$ 
+\end{itemize}
+
+\subsection*{Restricciones de tipo Sistemas}
+\begin{itemize}
+    \item $X_E + X_R \leq 680$ (Capacidad de transacciones)
+    \item $X_R \leq 3X_E$ (Estabilidad del sistema)
+    \item $X_E \geq 0$ y $X_R \geq 0$ 
+\end{itemize}
+
+\subsection*{Clasificación del problema}
+\begin{itemize}
+    \item \textbf{Lineal:} Todas las variables tienen potencia 1 y solo se aplican operaciones de suma; no existen productos entre variables, por lo que su representación gráfica es lineal.
+    \item \textbf{Entero:} Las variables representan unidades físicas (pedidos), las cuales no pueden ser fraccionarias (no existen medios o cuartos de pedidos), por lo que el dominio es discreto.
+\end{itemize}
+\subsection*{Preguntas}
+ya fueron resultas a lo largo de la solucion del punto 
+
+\end{document}
+
+
+
+
